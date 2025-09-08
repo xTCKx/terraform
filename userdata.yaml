@@ -1,0 +1,14 @@
+#cloud-config
+packages:
+    - wget
+    - fish
+    - ntpdate
+
+users:
+  - name: kuromi
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII96BjOQNArVbAP6vzALdGjo5dT8RM2pFtNgbbifbTVD student@Ubuntu2404DesktopGold-mcm42347-305368542439
+    shell: /bin/fish
+  
+   
