@@ -1,0 +1,32 @@
+ESXi Virtual Machines:
+----------------------
+%{ for i in range(webserver_count) }
+Webserver ${i + 1}: ${esxi_webserver_ips[i]}
+%{ endfor }
+Database Server: ${esxi_databaseserver_ip}
+
+Azure Virtual Machines:
+-----------------------
+%{ for i in range(2) }
+Azure VM ${i + 1}:
+  - Public IP:  ${azure_public_ips[i]}
+  - Private IP: ${azure_private_ips[i]}
+%{ endfor }
+
+Summary:
+--------
+Total ESXi VMs: ${webserver_count + 1}
+Total Azure VMs: 2
+Total VMs: ${webserver_count + 3}
+
+All IP Addresses (for quick reference):
+%{ for ip in esxi_webserver_ips }
+${ip}
+%{ endfor }
+${esxi_databaseserver_ip}
+%{ for ip in azure_public_ips }
+${ip}
+%{ endfor }
+%{ for ip in azure_private_ips }
+${ip}
+%{ endfor }

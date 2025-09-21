@@ -1,0 +1,9 @@
+#cloud-config
+
+write_files::
+  - path: /home/iac/hello.txt
+    owner: iac:iac
+    permissions: '0644'
+    content: |
+      Hello, World!
+    

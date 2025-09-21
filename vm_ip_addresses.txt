@@ -1,0 +1,32 @@
+VM IP Addresses Report
+Generated on: 2025-09-09T12:04:21Z
+
+ESXi Virtual Machines:
+----------------------
+Webserver 1: 192.168.1.106
+Webserver 2: 192.168.1.104
+Database Server: 192.168.1.105
+
+Azure Virtual Machines:
+-----------------------
+Azure VM 1:
+  - Public IP:  52.232.76.163
+  - Private IP: 10.0.2.5
+Azure VM 2:
+  - Public IP:  98.71.157.106
+  - Private IP: 10.0.2.4
+
+Summary:
+--------
+Total ESXi VMs: 3
+Total Azure VMs: 2
+Total VMs: 5
+
+All IP Addresses (for quick reference):
+192.168.1.106
+192.168.1.104
+192.168.1.105
+52.232.76.163
+98.71.157.106
+10.0.2.5
+10.0.2.4
